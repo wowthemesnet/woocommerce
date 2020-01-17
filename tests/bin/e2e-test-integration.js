@@ -18,6 +18,7 @@ const testEnvVars = {
 if ( program.dev ) {
 	testEnvVars.PUPPETEER_HEADLESS = 'false';
 	testEnvVars.PUPPETEER_SLOWMO = '50';
+	testEnvVars.PUPPETEER_TIMEOUT = '120000';
 
 	delete testEnvVars.JEST_PUPPETEER_CONFIG;
 	useJestPuppeteerConfig();
